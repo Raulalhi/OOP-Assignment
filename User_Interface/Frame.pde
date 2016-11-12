@@ -6,10 +6,10 @@ void DrawFrame()
   
   noFill();
   stroke(0,255,255);
-  strokeWeight(4);
+  strokeWeight(5);
   
   rectMode(CENTER);
-  rect(cx, cy, (2 * cx) - 10 ,cx);
+  rect(cx, cy, width-5 ,cx);
   
   fill(51);
   strokeWeight(4);
