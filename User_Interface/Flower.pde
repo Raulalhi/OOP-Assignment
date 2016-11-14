@@ -1,6 +1,5 @@
 
-void drawPlant() {
-}
+void drawPlant() {}
 
 int branches = 10;
 float tPos=radians(0);
