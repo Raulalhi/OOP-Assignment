@@ -1,16 +1,21 @@
 
-float endpoint = height/2 + 60;
 void drawPlant() {
-  
-  float cx = width/2;
-  float cy = height/2;
-  float theta = 0;
-  
-  stroke(0,255,0);
-  fill(0,255,0);
-  
-  line(cx, cy + cx/2, cx, endpoint);
-  ellipse(cx, cy + 60, 10, 10);
-  cy = sin(theta);
-  cy+= 0.1;
+}
+
+int branches = 10;
+float tPos=radians(0);
+float tSpeed=0.00;
+float tForce = 0.00002; 
+void tree(float x, float y, float a, float l, int c, int s, int branches) {
+  if (branches==0)
+    return;
+  color c1 = c;
+  float x2 = l*cos(a)+x;
+  float y2 = l*sin(a)+y;
+  stroke(c1,0,0);
+  strokeWeight(s);
+  line(x, y, x2, y2);
+
+  tree(x2, y2, a-tPos*PI, l*0.8, c1+20, s-1, branches -1);
+  tree(x2, y2, a+tPos*PI, l*0.8, c1+20, s-1, branches -1);
 }

@@ -1,7 +1,7 @@
 //OOP Assignment 1
 //Raul Alvarez
-MenuChoice[] Options = new MenuChoice[10];
 
+MenuChoice[] Options = new MenuChoice[10];
 void setup()
 {
   size(1280, 720);
@@ -44,12 +44,17 @@ void draw()
   drawMenu();
   DrawFrame();
   drawPlant();
-
+  //superformula();
+  tSpeed+=tForce;
+  tPos+=tSpeed;
+if (tPos>radians(5)&&tSpeed>0) {
+    tForce=-0.00002;
+  }
+  if (tPos<radians(5)&&tSpeed<0) {
+    tForce=0.00002;
+  }
+  tree(width/2, height - 50, -PI/2, height/8, 0, 11, branches);  //Drawing just one tree
 }
 
-float r (float theta, float a, float b, float m, float n1, float n2, float n3)
-{
-  return pow(pow( abs( cos( m * theta / 4.0) / a), n2) + pow( abs( sin( m * theta / 4.0) / b), n3), -1.0 / n1);
-}
   
     
