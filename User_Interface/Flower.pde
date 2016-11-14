@@ -11,7 +11,15 @@ void tree(float x, float y, float a, float l, int c, int s, int branches) {
   color c1 = c;
   float x2 = l*cos(a)+x;
   float y2 = l*sin(a)+y;
-  stroke(c1,0,0);
+  
+  if (branches == 10)
+  {
+    stroke(51);
+  }
+  else
+  {
+  stroke(0,c1,c1);
+  }
   strokeWeight(s);
   line(x, y, x2, y2);
 

@@ -60,8 +60,6 @@ void draw()
   
   
   //superformula();
-  tSpeed+=tForce;
-  tPos+=tSpeed;
   
   if ( tPos > radians(5) && tSpeed > 0)
   {
@@ -71,11 +69,43 @@ void draw()
   {
     tForce=0.00002;
   }
-  
-  //tree(width/2, height - 50, -PI/2, height/8, 0, 11, branches);  //Drawing just one tree
+  if (option == 1)
+  {
+    tree(width/2, height - 50, -PI/2, height/8, 0, 11, branches);
+    tree(width/2,  50, PI/2, height/8, 0, 11, branches);//Drawing just one tree
+    tree(width/4,  height/2, TWO_PI, height/8, 0, 11, branches);
+    tree(width*3/4,  height/2, PI, height/8, 0, 11, branches);
+    tSpeed+=tForce;
+    tPos+=tSpeed;
+    
+        if ( tPos > radians(5) && tSpeed > 0)
+        {
+            tForce=-0.00002;
+        }
+        if ( tPos < radians(5) && tSpeed < 0)
+        {
+            tForce=0.00002;
+        }
+  }
+  else if(option == 2)
+  {
+    
+  }
+  else if(option == 3)
+  {
+
+  }
+  else if(option == 4)
+  {
+   
+  }
 }
 
+int option;
 void mousePressed()
 {
-  
+  if( mouseX > Options[0].rectX && mouseX < Options[0].rectX + Options[0].rectW && mouseY > Options[0].rectY && mouseY < Options[0].rectY + Options[0].rectH)
+  {
+    option = 1;
+  }
 }
