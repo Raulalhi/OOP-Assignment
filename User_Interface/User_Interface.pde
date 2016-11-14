@@ -73,8 +73,8 @@ void draw()
   {
     tree(width/2, height - 50, -PI/2, height/8, 0, 11, branches);
     tree(width/2,  50, PI/2, height/8, 0, 11, branches);//Drawing just one tree
-    tree(width/4,  height/2, TWO_PI, height/8, 0, 11, branches);
-    tree(width*3/4,  height/2, PI, height/8, 0, 11, branches);
+    tree(width/4 + 8,  height/2, TWO_PI, height/8, 0, 11, branches);
+    tree(width*3/4 - 8,  height/2, PI, height/8, 0, 11, branches);
     tSpeed+=tForce;
     tPos+=tSpeed;
     
