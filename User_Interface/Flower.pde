@@ -1,13 +1,17 @@
 
-void drawPlant() {}
-
 int branches = 10;
 float tPos=radians(0);
 float tSpeed=0.00;
-float tForce = 0.00002; 
-void tree(float x, float y, float a, float l, int c, int s, int branches) {
+float tForce = 0.00002;
+
+void tree(float x, float y, float a, float l, int c, int s, int branches)
+{
   if (branches==0)
+  {
     return;
+  }
+  
+  
   color c1 = c;
   float x2 = l*cos(a)+x;
   float y2 = l*sin(a)+y;
@@ -16,6 +20,7 @@ void tree(float x, float y, float a, float l, int c, int s, int branches) {
   {
     stroke(51);
   }
+  
   else
   {
   stroke(0,c1,c1);
