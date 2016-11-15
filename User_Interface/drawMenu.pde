@@ -17,9 +17,10 @@ void drawMenu()
     Options[i].checkOption(mouseX, mouseY);
     Options[i].display();
     
-    textFont(font);
+    textFont(font, 48);
     fill(255);
     textAlign(CENTER);
+    fill(255);
     text(Choices[i], textX, textY);
     
     startY = startY + rheight;

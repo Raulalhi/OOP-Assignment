@@ -2,13 +2,13 @@
 //Raul Alvarez
 
 MenuChoice[] Options = new MenuChoice[10];
-String[] Choices = { "Tree", "Graph", "Image", "Spere", "Levels", "6", "7", "8", "9", "10"};
+String[] Choices = { "Tree", "Graph", "Image", "Sphere", "Levels", "6", "7", "8", "9", "10"};
 
 PFont font;
 void setup()
 {
-  size(1280, 720, P3D);
-  font = createFont("Arial", 48);
+  size(1280, 720, P2D);
+  font = loadFont("Skia-Regular_Extended-48.vlw");
   photo = loadImage("Mars2.gif");
 }
 
@@ -60,6 +60,10 @@ void mousePressed()
   if( mouseX > Options[0].rectX && mouseX < Options[0].rectX + Options[0].rectW && mouseY > Options[0].rectY && mouseY < Options[0].rectY + Options[0].rectH)
   {
     option = 1;
+  }
+  else if( mouseX > Options[1].rectX && mouseX < Options[1].rectX + Options[1].rectW && mouseY > Options[1].rectY && mouseY < Options[1].rectY + Options[1].rectH)
+  {
+    option = 2;
   }
   else if( mouseX > Options[2].rectX && mouseX < Options[2].rectX + Options[2].rectW && mouseY > Options[2].rectY && mouseY < Options[2].rectY + Options[2].rectH)
   {
