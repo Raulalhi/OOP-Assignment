@@ -22,7 +22,6 @@ void draw()
   background(51);
   drawMenu();
   DrawFrame();
-  displayTime();
   
   
   if (option == 1)
@@ -45,6 +44,7 @@ void draw()
   }
   else if(option == 2)
   {
+    displayTime();
     
   }
   else if(option == 3)

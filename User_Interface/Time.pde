@@ -33,9 +33,9 @@ void displayTime() {
     
     Seconds[i] = new Second(x, y);
     Seconds[i].display();
-    Seconds[i].fillSecond();
-    
+    //Seconds[i].fillSecond();
   }
+  translate(0,0);
 }
 
 
@@ -44,7 +44,7 @@ class Second {
   float x;
   float y;
   float w;
-  boolean check;
+  boolean check = false;
   
   Second(float x, float y)
   {
@@ -56,6 +56,7 @@ class Second {
   void display()
   {
     strokeWeight(1);
+    
     if(check)
     {
       fill(0,255,255);
@@ -72,4 +73,5 @@ class Second {
   {
      Seconds[second()].check = true;
   }
+  
 }

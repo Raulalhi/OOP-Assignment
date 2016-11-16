@@ -43,7 +43,9 @@ class MenuChoice {
       mouse = true;
     }
     
-    else {
+    else
+    {
       mouse = false;
     } 
   }
+}
