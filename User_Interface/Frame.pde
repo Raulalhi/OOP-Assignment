@@ -8,9 +8,6 @@ void DrawFrame()
   stroke(0,255,255);
   strokeWeight(5);
   
-  rectMode(CENTER);
-  rect(cx, cy, width-5 ,cx);
-  
   fill(51);
   strokeWeight(4);
   ellipse(cx, cy, cx, cx);

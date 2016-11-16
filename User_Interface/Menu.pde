@@ -36,7 +36,7 @@ class MenuChoice {
   {
     int ellX = width/2;
     int ellY = height/2;
-    double dist = distance(ellX, ellY, mx, my);
+    double dist = dist(ellX, ellY, mx, my);
     
     if(mx > rectX && mx < rectX + rectW && my > rectY && my < rectY + rectH && dist > ellX/2)
     {
@@ -47,11 +47,3 @@ class MenuChoice {
       mouse = false;
     } 
   }
-  
-  double distance(int x1, int y1, int x2, int y2)
-  {
-    int dx = x1 - x2;
-    int dy = y1 - y2;
-    return Math.sqrt(dx * dx + dy *dy);
-  }
-}
