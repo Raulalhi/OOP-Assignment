@@ -8,6 +8,7 @@ PFont font;
 float cx, cy;
 void setup()
 {
+  frameRate(20);
   size(1280, 720, P2D);
   font = loadFont("Skia-Regular_Extended-48.vlw");
   photo = loadImage("Mars2.gif");
@@ -22,6 +23,7 @@ void draw()
   background(51);
   drawMenu();
   DrawFrame();
+  //displayLevels();
   
   
   if (option == 1)
@@ -45,7 +47,6 @@ void draw()
   else if(option == 2)
   {
     displayTime();
-    
   }
   else if(option == 3)
   {
@@ -60,16 +61,51 @@ void draw()
 int option;
 void mousePressed()
 {
-  if( mouseX > Options[0].rectX && mouseX < Options[0].rectX + Options[0].rectW && mouseY > Options[0].rectY && mouseY < Options[0].rectY + Options[0].rectH)
+  if( mouseX > Options[0].rectX && mouseX < Options[0].rectX + Options[0].rectW &&
+      mouseY > Options[0].rectY && mouseY < Options[0].rectY + Options[0].rectH && 
+      Options[0].mouse == true)
   {
     option = 1;
   }
-  else if( mouseX > Options[1].rectX && mouseX < Options[1].rectX + Options[1].rectW && mouseY > Options[1].rectY && mouseY < Options[1].rectY + Options[1].rectH)
+  
+  else if( mouseX > Options[1].rectX && mouseX < Options[1].rectX + Options[1].rectW &&
+           mouseY > Options[1].rectY && mouseY < Options[1].rectY + Options[1].rectH && 
+           Options[1].mouse == true)
   {
     option = 2;
   }
-  else if( mouseX > Options[2].rectX && mouseX < Options[2].rectX + Options[2].rectW && mouseY > Options[2].rectY && mouseY < Options[2].rectY + Options[2].rectH)
+  else if( mouseX > Options[2].rectX && mouseX < Options[2].rectX + Options[2].rectW &&
+           mouseY > Options[2].rectY && mouseY < Options[2].rectY + Options[2].rectH && 
+           Options[2].mouse == true)
   {
     option = 3;
+  }
+  else if( mouseX > Options[3].rectX && mouseX < Options[1].rectX + Options[3].rectW && 
+           mouseY > Options[3].rectY && mouseY < Options[1].rectY + Options[3].rectH && 
+           Options[3].mouse == true)
+  {
+    option = 4;
+  }
+  else if( mouseX > Options[2].rectX && mouseX < Options[2].rectX + Options[2].rectW && 
+           mouseY > Options[2].rectY && mouseY < Options[2].rectY + Options[2].rectH && 
+           Options[2].mouse == true)
+  {
+    option = 5;
+  }
+  else if( mouseX > Options[1].rectX && mouseX < Options[1].rectX + Options[1].rectW && mouseY > Options[1].rectY && mouseY < Options[1].rectY + Options[1].rectH && Options[1].mouse == true)
+  {
+    option = 6;
+  }
+  else if( mouseX > Options[2].rectX && mouseX < Options[2].rectX + Options[2].rectW && mouseY > Options[2].rectY && mouseY < Options[2].rectY + Options[2].rectH && Options[2].mouse == true)
+  {
+    option = 7;
+  }
+  else if( mouseX > Options[1].rectX && mouseX < Options[1].rectX + Options[1].rectW && mouseY > Options[1].rectY && mouseY < Options[1].rectY + Options[1].rectH && Options[1].mouse == true)
+  {
+    option = 8;
+  }
+  else if( mouseX > Options[2].rectX && mouseX < Options[2].rectX + Options[2].rectW && mouseY > Options[2].rectY && mouseY < Options[2].rectY + Options[2].rectH && Options[2].mouse == true)
+  {
+    option = 9;
   }
 }

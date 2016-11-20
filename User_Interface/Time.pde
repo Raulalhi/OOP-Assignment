@@ -16,13 +16,14 @@ void displayTime() {
   
   
   noFill();
+  strokeWeight(2);
   ellipse(cx, cy, 300, 300);
+  strokeWeight(4);
   ellipse(cx, cy, 350, 350);
   
   
   float r = 190;
   float theta = 0;
-  
   translate(cx,cy);
   for( int i = 0; i < Seconds.length; i++)
   {
@@ -31,23 +32,23 @@ void displayTime() {
     float y = r * sin(angle);
     theta++;
     
-    Seconds[i] = new Second(x, y);
+    Seconds[i] = new Second(i, x, y);
     Seconds[i].display();
-    //Seconds[i].fillSecond();
+    Seconds[i].fillcounter();
   }
-  translate(0,0);
 }
-
 
 class Second {
   
+  int sec;
   float x;
   float y;
   float w;
-  boolean check = false;
+  boolean check = true;
   
-  Second(float x, float y)
+  Second(int sec, float x, float y)
   {
+    this.sec = sec;
     this.x = x;
     this.y = y;
     w = 10;
@@ -69,9 +70,9 @@ class Second {
     ellipse(x, y, w, w);
   }
   
-  void fillSecond()
+  void fillcounter()
   {
-     Seconds[second()].check = true;
+      check = true;
   }
   
 }
