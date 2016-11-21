@@ -19,7 +19,7 @@ void tree(float x, float y, float a, float l, int c, int s, int branches)
   
   if (branches == 10)
   {
-    stroke(51);
+    stroke(0);
   }
   
   else

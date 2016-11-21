@@ -1,14 +1,20 @@
 
 Level[] Levels = new Level[3];
+String[] LevelDesc = {"Water", "Oxygen", "Carbon Dioxide"};
 
 void displayLevels() {
   
   float levelY = cy - 160;
+  float textY = 150;
   for( int i = 0; i < Levels.length; i++)
   {
+    
+    textAlign(CENTER);
+    text(LevelDesc[i], cx, textY);
     Levels[i] = new Level(cx, levelY);
     Levels[i].display();
     levelY += 160;
+    textY += 160;
   }
 }
 class Level {
@@ -26,10 +32,10 @@ class Level {
     this.x = x;
     this.y = y;
     w = width/4;
-    this.sw = random(50, w);
+    this.sw = 50;
     h = 50;
     r = 100;
-    this.fill = color(0, random(255), random(255));
+    this.fill = color(0, 255, 255);
     
   }
   

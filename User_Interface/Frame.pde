@@ -8,7 +8,7 @@ void DrawFrame()
   stroke(0,255,255);
   strokeWeight(5);
   
-  fill(51);
+  fill(0);
   strokeWeight(4);
   ellipse(cx, cy, cx, cx);
 }

@@ -24,8 +24,7 @@ class MenuChoice {
     } 
     else
     {
-      noFill();
-      fill(51);
+      fill(0);
     }
     stroke(0,255,255);
     strokeWeight(4);
