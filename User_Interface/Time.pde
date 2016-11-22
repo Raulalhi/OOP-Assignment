@@ -7,13 +7,32 @@ void displayTime() {
   int  s = second();
   int  m = minute();
   int  h = hour();
-
+  
   String time = h + ":" + m + ":" + s;
+  String time2 = h + ":" + m + ":0" + s;
+  String time3 = h + ":0" + m + ":" + s;
+  String time4 = h + ":0" + m + ":0" + s;
+  
   textAlign(CENTER, CENTER);
   textSize(60);
   fill(0, 255, 255);
-  text(time, cx, cy);
   
+  if( minute() < 10 && second() < 10)
+  {
+    text(time4, cx, cy);
+  }
+  else if( minute() < 10)
+  {
+    text(time3, cx, cy);
+  }
+  else if(second() < 10)
+  {
+    text(time2, cx, cy);
+  }
+  else
+  {
+    text(time, cx, cy);
+  }
   
   noFill();
   strokeWeight(2);

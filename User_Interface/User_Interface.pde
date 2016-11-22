@@ -9,8 +9,9 @@ float cx, cy;
 
 void setup()
 {
-  frameRate(20);
-  size(1280, 720, P2D);
+  frameRate(60);
+  smooth();
+  size(1280, 720, P3D);
   font = loadFont("Skia-Regular_Extended-48.vlw");
   photo = loadImage("Mars2.gif");
   cx = width/2;
@@ -22,11 +23,11 @@ void setup()
 float t = 0;
 void draw()
 {
+  //lights();
   background(0);
   drawMenu();
   DrawFrame();
-  
-  
+
   if (option == 1)
   {
     tree(width/2, height - 50, -PI/2, height/8, 0, 11, branches);
@@ -47,7 +48,7 @@ void draw()
   }
   else if(option == 2)
   {
-    displayTime();
+
   }
   else if(option == 3)
   {
@@ -55,7 +56,7 @@ void draw()
   }
   else if(option == 4)
   {
-   
+   drawSphere();
   }
   else if(option == 5)
   {
@@ -75,11 +76,9 @@ void draw()
   }
   else if(option == 8)
   {
-    displayTime();
   }
   else if(option == 9)
   {
-    showImage();
   }
   else if(option == 10)
   {

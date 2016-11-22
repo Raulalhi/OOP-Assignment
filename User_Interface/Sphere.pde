@@ -1,10 +1,15 @@
-//void drawSphere() {
+void drawSphere() {
   
-//  pushMatrix();
-//  translate(500, height*0.35, -200);
-//  noFill();
-//  stroke(255);
-//  sphere(280);
-//  popMatrix();
+ translate(width/2, height/2, -50);
+ noFill();
+ pushMatrix();
 
-//}
+
+   //rotateX(radians(frameCount*3));
+   rotateY(radians(frameCount/2));
+   sphereDetail(50);
+   sphere(290);
+
+ popMatrix();
+
+}

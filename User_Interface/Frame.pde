@@ -10,5 +10,6 @@ void DrawFrame()
   
   fill(0);
   strokeWeight(4);
+  translate(0,0, 1);
   ellipse(cx, cy, cx, cx);
 }
