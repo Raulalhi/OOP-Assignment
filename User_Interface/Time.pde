@@ -7,12 +7,19 @@ void displayTime() {
   int  s = second();
   int  m = minute();
   int  h = hour();
+  float thetaARC = 0;
   
   String time = h + ":" + m + ":" + s;
   String time2 = h + ":" + m + ":0" + s;
   String time3 = h + ":0" + m + ":" + s;
   String time4 = h + ":0" + m + ":0" + s;
   
+  
+  fill(0,255,255);
+  arc(cx, cy, 350, 350, radians(theta), radians(20));
+  strokeWeight(2);
+  fill(0);
+  ellipse(cx, cy, 300, 300);
   textAlign(CENTER, CENTER);
   textSize(60);
   fill(0, 255, 255);
@@ -33,12 +40,10 @@ void displayTime() {
   {
     text(time, cx, cy);
   }
-  
-  noFill();
-  strokeWeight(2);
-  ellipse(cx, cy, 300, 300);
   strokeWeight(4);
+  noFill();
   ellipse(cx, cy, 350, 350);
+  thetaARC += 0.01;
   
   
   float r = 190;

@@ -7,7 +7,7 @@ void drawSphere() {
 
    //rotateX(radians(frameCount*3));
    rotateY(radians(frameCount/2));
-   sphereDetail(50);
+   sphereDetail(30);
    sphere(290);
 
  popMatrix();
