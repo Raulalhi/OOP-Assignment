@@ -42,7 +42,7 @@ void displayTime() {
   }
   strokeWeight(4);
   noFill();
-  ellipse(cx, cy, 350, 350);
+  ellipse(cx, cy, thetaARC, 350);
   thetaARC += 0.01;
   
   
@@ -68,7 +68,7 @@ class Second {
   float x;
   float y;
   float w;
-  boolean check = true;
+  boolean check = false;
   
   Second(int sec, float x, float y)
   {
@@ -96,7 +96,6 @@ class Second {
   
   void fillcounter()
   {
-      check = true;
   }
   
 }

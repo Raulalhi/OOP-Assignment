@@ -1,17 +1,20 @@
 
 Level[] Levels = new Level[3];
 String[] LevelDesc = {"Water", "Oxygen", "Carbon Dioxide"};
+float[] Level ={random(50, 300), random(50, 300), random(50, 300)};
+color [] colarray = { color(0,random(0,255),random(0,255)), color(0,random(0,255),random(0,255)),color(0,random(0,255),random(0,255))};
 
 void displayLevels() {
   
   float levelY = cy - 160;
-  float textY = 150;
+  int textY = 150;
   for( int i = 0; i < Levels.length; i++)
   {
     
     textAlign(CENTER);
-    text(LevelDesc[0], cx, 150);
-    Levels[i] = new Level(cx, levelY);
+    fill(255);
+    text(LevelDesc[i], cx, textY);
+    Levels[i] = new Level(cx, levelY, Level[i], colarray[i]);
     Levels[i].display();
     levelY += 160;
     textY += 160;
@@ -27,25 +30,25 @@ class Level {
   float r;
   color fill;
   
-  Level(float x, float y) {
+  Level(float x, float y, float sw, color fill) {
     
     this.x = x;
     this.y = y;
     w = width/4;
-    this.sw = 50;
+    this.sw = sw;
     h = 50;
     r = 100;
-    this.fill = color(0, 255, 255);
+    this.fill = fill;
     
   }
   
   void display()
   {
-    
+     
     fill(fill);
     noStroke();
     rectMode(CORNER);
-    rect(x - w/2 , y - h/2, sw, h, r);
+    rect(x - w/2 , y - h/2, sw + random(-5, 5), h, r);
     
     noFill();
     strokeWeight(4);

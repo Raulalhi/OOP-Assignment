@@ -5,7 +5,7 @@ void drawSphere() {
  pushMatrix();
 
 
-   //rotateX(radians(frameCount*3));
+   rotateX(radians(frameCount/2));
    rotateY(radians(frameCount/2));
    sphereDetail(30);
    sphere(290);
