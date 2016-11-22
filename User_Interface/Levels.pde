@@ -10,7 +10,7 @@ void displayLevels() {
   {
     
     textAlign(CENTER);
-    text(LevelDesc[i], cx, textY);
+    text(LevelDesc[0], cx, 150);
     Levels[i] = new Level(cx, levelY);
     Levels[i].display();
     levelY += 160;

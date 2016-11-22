@@ -6,6 +6,7 @@ String[] Choices = { "Tree", "Graph", "Image", "Sphere", "Levels", "Time", "Rada
 
 PFont font;
 float cx, cy;
+
 void setup()
 {
   frameRate(20);
@@ -14,6 +15,7 @@ void setup()
   photo = loadImage("Mars2.gif");
   cx = width/2;
   cy = height/2;
+  
 }
 
 
@@ -81,7 +83,7 @@ void draw()
   }
   else if(option == 10)
   {
-   
+
   }
 }
 
