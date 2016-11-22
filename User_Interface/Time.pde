@@ -1,13 +1,12 @@
 
 Second[] Seconds = new Second[60];
 
-
+float thetaARC = 0;
 void displayTime() {
   
   int  s = second();
   int  m = minute();
   int  h = hour();
-  float thetaARC = 0;
   
   String time = h + ":" + m + ":" + s;
   String time2 = h + ":" + m + ":0" + s;
@@ -16,7 +15,7 @@ void displayTime() {
   
   
   fill(0,255,255);
-  arc(cx, cy, 350, 350, radians(theta), radians(20));
+  arc(cx, cy, 350, 350, thetaARC, thetaARC+.5);
   strokeWeight(2);
   fill(0);
   ellipse(cx, cy, 300, 300);
@@ -42,8 +41,8 @@ void displayTime() {
   }
   strokeWeight(4);
   noFill();
-  ellipse(cx, cy, thetaARC, 350);
-  thetaARC += 0.01;
+  ellipse(cx, cy, 350, 350);
+  thetaARC += 0.05;
   
   
   float r = 190;
