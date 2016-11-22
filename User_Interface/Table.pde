@@ -1,17 +1,35 @@
+ArrayList<Growth> Grows = new ArrayList<Growth>();
 Table table;
 
 void drawGraph()
 {
   table = loadTable("growth.csv", "header");
+  int size = table.getRowCount();
+  
+  for( TableRow row : table.rows())
+  {    
+    Growth ChartData = new Growth(row);
+    Grows.add(ChartData);
+  }
+  
+  for(Growth ChartData:Grows)
+  {
+    println(ChartData);
+  }
 }
 
 class Growth {
-  float value;
   int year;
+  float value;
   
-  Growth()
+  Growth(TableRow row)
   {
-    value = 0;
-    year = 0;
+    this.year = row.getInt("year");
+    this.value = row.getFloat("grow");
+  }
+  
+  String toString()
+  {
+    return year + "," + value;
   }
 }

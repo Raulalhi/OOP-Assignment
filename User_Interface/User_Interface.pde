@@ -28,6 +28,9 @@ void draw()
   drawMenu();
   DrawFrame();
 
+
+drawGraph();
+
   if (option == 1)
   {
     tree(width/2, height - 50, -PI/2, height/8, 0, 11, branches);
