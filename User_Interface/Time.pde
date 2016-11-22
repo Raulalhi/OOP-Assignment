@@ -95,6 +95,10 @@ class Second {
   
   void fillcounter()
   {
+    if( second() == sec)
+    {
+      check = true;
+    }
   }
   
 }
