@@ -1,10 +1,13 @@
 ArrayList<Growth> Grows = new ArrayList<Growth>();
 Table table;
 
-void drawGraph()
+void loadTable()
 {
   table = loadTable("growth.csv", "header");
   int size = table.getRowCount();
+}
+void drawGraph()
+{
   
   for( TableRow row : table.rows())
   {    

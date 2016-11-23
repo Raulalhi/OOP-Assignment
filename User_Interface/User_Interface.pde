@@ -2,7 +2,7 @@
 //Raul Alvarez
 
 MenuChoice[] Options = new MenuChoice[10];
-String[] Choices = { "Tree", "Graph", "Image", "Sphere", "Levels", "Time", "Radar", "", "..",".."};
+String[] Choices = { "Tree", "Graph", "Image", "Sphere", "Levels", "Time", "Radar", "...", "...","EXIT"};
 
 PFont font;
 float cx, cy;
@@ -16,6 +16,7 @@ void setup()
   photo = loadImage("Mars2.gif");
   cx = width/2;
   cy = height/2;
+  loadTable();
   
 }
 
@@ -29,7 +30,7 @@ void draw()
   DrawFrame();
 
 
-drawGraph();
+//drawGraph();
 
   if (option == 1)
   {
@@ -85,7 +86,7 @@ drawGraph();
   }
   else if(option == 10)
   {
-
+    exit();
   }
 }
 
