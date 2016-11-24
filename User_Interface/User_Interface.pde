@@ -2,7 +2,7 @@
 //Raul Alvarez
 
 MenuChoice[] Options = new MenuChoice[10];
-String[] Choices = { "TREE", "GRAPH", "IMAGE", "SPHERE", "LEVELS", "TIME", "RADAR", "...", "...","EXIT"};
+String[] Choices = { "TREE", "GRAPH", "IMAGE", "SPHERE", "LEVELS", "TIME", "RADAR","EXIT"};
 
 PFont font;
 float cx, cy;
