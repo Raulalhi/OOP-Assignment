@@ -26,7 +26,7 @@ void drawMenu()
     startY = startY + rheight;
     textY = textY + rheight;
     
-    if( i == 4)
+    if( i == 3)
     {
       startX = cx;
       startY = (height - cx) / 2;
