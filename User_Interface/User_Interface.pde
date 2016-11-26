@@ -9,7 +9,6 @@ float cx, cy;
 
 void setup()
 {
-  frameRate(60);
   smooth();
   size(1280, 720, P3D);
   font = loadFont("Skia-Regular_Extended-48.vlw");
@@ -24,6 +23,11 @@ void setup()
 float t = 0;
 void draw()
 {
+  background(0);
+  fill(0,255,255);
+  text("PROJECT: Greenhouse in Mars", cx, 50);
+  
+  
   //lights();
   background(0);
   drawMenu();
