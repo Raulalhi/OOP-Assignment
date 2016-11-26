@@ -10,6 +10,7 @@ float cx, cy;
 void setup()
 {
   smooth();
+  background(0);
   size(1280, 720, P3D);
   font = loadFont("Skia-Regular_Extended-48.vlw");
   photo = loadImage("Mars2.gif");
@@ -23,15 +24,13 @@ void setup()
 float t = 0;
 void draw()
 {
-  background(0);
-  fill(0,255,255);
-  text("PROJECT: Greenhouse in Mars", cx, 50);
+  
+  FirstScreen();
   
   
   //lights();
-  background(0);
-  drawMenu();
-  DrawFrame();
+  //drawMenu();
+  //DrawFrame();
   
   if (option == 1)
   {
