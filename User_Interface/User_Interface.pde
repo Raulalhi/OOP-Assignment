@@ -1,7 +1,7 @@
 //OOP Assignment 1
 //Raul Alvarez
 
-MenuChoice[] Options = new MenuChoice[10];
+MenuChoice[] Options = new MenuChoice[8];
 String[] Choices = { "TREE", "GRAPH", "IMAGE", "SPHERE", "LEVELS", "TIME", "RADAR","EXIT", ".."};
 
 PFont font;
@@ -76,12 +76,6 @@ void draw()
     ellipse(cx, cy, cx, cx);
   }
   else if(option == 8)
-  {
-  }
-  else if(option == 9)
-  {
-  }
-  else if(option == 10)
   {
     exit();
   }

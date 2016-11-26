@@ -5,7 +5,7 @@ void drawMenu()
   
   float startX = 0;
   float startY = (height - cx) / 2;
-  float rheight= cx / 5;
+  float rheight= cx / 4;
   float rwidth = cx;
   
   float textX = startX + width/8;
