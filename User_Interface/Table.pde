@@ -41,6 +41,7 @@ void drawGraph()
    
    fill(0,255,255);
    textSize(12);
+   text(ChartData.value, x - 20, y);
    text(ChartData.year, x, lineY+20);
    xs[i] = x;
    ys[i] = y;

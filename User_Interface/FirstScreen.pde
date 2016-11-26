@@ -1,4 +1,5 @@
 String password="";
+String passDisp="";
 boolean correct=false;
 boolean menu= false;
 
@@ -29,10 +30,11 @@ void FirstScreen()
 int passX = 550;
 void keyPressed()
 {
+  
   textFont(font, 68);
-  text("·", passX, 400);
+  text("#", passX, 400);
   password+=key;
-  passX += 20;
+  passX += 40;
   
   if(password.equals("holly"))
   {
