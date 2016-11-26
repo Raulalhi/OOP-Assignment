@@ -2,6 +2,7 @@ void drawSphere() {
   
  translate(width/2, height/2, -50);
  noFill();
+ strokeWeight(1);
  pushMatrix();
 
 

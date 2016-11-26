@@ -10,6 +10,7 @@ float cx, cy;
 void setup()
 {
   smooth();
+  strokeCap(ROUND);
   background(0);
   size(1280, 720, P3D);
   font = loadFont("Skia-Regular_Extended-48.vlw");
@@ -87,11 +88,14 @@ void draw()
 int option;
 void mousePressed()
 {
-  for( int i = 0; i < Options.length; i++)
+  if(menu)
   {
-    if( mouseX > Options[i].rectX && mouseX < Options[i].rectX + Options[i].rectW && mouseY > Options[i].rectY && mouseY < Options[i].rectY + Options[i].rectH && Options[i].mouse == true)
+    for( int i = 0; i < Options.length; i++)
     {
-    option = i +1;
+      if( mouseX > Options[i].rectX && mouseX < Options[i].rectX + Options[i].rectW && mouseY > Options[i].rectY && mouseY < Options[i].rectY + Options[i].rectH && Options[i].mouse == true)
+      {
+      option = i +1;
+      }
     }
   }
 }
