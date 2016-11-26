@@ -6,7 +6,6 @@ Table table;
 void loadTable()
 {
   table = loadTable("growth.csv", "header");
-  int size = table.getRowCount();
   
   for( TableRow row : table.rows())
   {    
@@ -27,6 +26,7 @@ void drawGraph()
   float lineX2 = cx + 200;
   float lineY = cy + 200;
   float lineY2 = cy - 200;
+  float textY = lineY + 20;
   
   line(lineX, lineY, lineX2, lineY);
   line(lineX, lineY, lineX, lineY2);
@@ -41,7 +41,6 @@ void drawGraph()
    
    fill(0,255,255);
    textSize(12);
-   text(ChartData.value, x - 20, y);
    text(ChartData.year, x, lineY+20);
    xs[i] = x;
    ys[i] = y;

@@ -18,7 +18,7 @@ void FirstScreen()
     textAlign(CENTER);
     textFont(font, 48);
     text("PROJECT: Martian Greenhouse", width/2, 70);
-    text("SPECIE: Ilex aquifolium", width/2, 170);
+    text("SPECIES: Ilex aquifolium", width/2, 170);
     text("Enter Password: ", width/2, 270);
     rectMode(CENTER);
     noFill();
