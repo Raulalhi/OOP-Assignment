@@ -26,7 +26,7 @@ void drawGraph()
   float lineX2 = cx + 200;
   float lineY = cy + 200;
   float lineY2 = cy - 200;
-  float textY = lineY + 20;
+
   
   line(lineX, lineY, lineX2, lineY);
   line(lineX, lineY, lineX, lineY2);
