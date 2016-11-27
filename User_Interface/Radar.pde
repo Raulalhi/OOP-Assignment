@@ -11,7 +11,6 @@ void drawRadar(float theta, float intensity)
   line(cx, cy, x, y);
   if (intensity <= 0)
   {    
-    // Use this to disambiguate the parameter theta from the global variable
     this.theta += speed;
     return;
   }
