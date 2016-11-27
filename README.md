@@ -20,12 +20,12 @@ This function creates a fractal tree using recursion and polar coordinates. The 
 
 I have stored a .csv file that contains the year and growth of the plant. Using an ArrayList I stored the data and draw a graph in the middle of the screen.
 
-![alt text](https://github.com/Raulalhi/OOP-Assignment/blob/master/Screenshots/0b93904b7338f0932ba3f7c4f490ddef.png)
+![alt text](https://github.com/Raulalhi/OOP-Assignment/blob/master/Screenshots/9546fe41153a3b7ea69007a8ee3b2ac3.png)
 <h3>3. Image</h3>
 
 Crop an image and adjust it so that it fits in the center.
 
-![alt text](https://github.com/Raulalhi/OOP-Assignment/blob/master/Screenshots/0b93904b7338f0932ba3f7c4f490ddef.png)
+![alt text](https://github.com/Raulalhi/OOP-Assignment/blob/master/Screenshots/14f2a5a3684f6087f075f1c20064887d.png)
 
 <h3>4. Sphere</h3>
 Using sphere() and transforming the sketch to 3D we create a spehre that rotates around its X and Y axis.
@@ -36,7 +36,7 @@ Using sphere() and transforming the sketch to 3D we create a spehre that rotates
 
 3 rectangles are drawn, with 3 other "inside" them. the width and fill color of these ones are generated randomly to recreate a measuring system.
 
-![alt text](https://github.com/Raulalhi/OOP-Assignment/blob/master/Screenshots/0b93904b7338f0932ba3f7c4f490ddef.png)
+![alt text](https://github.com/Raulalhi/OOP-Assignment/blob/master/Screenshots/fe84f43ea68233effa02cb200a34bdc6.png)
 
 <h3>6. Time</h3>
 
