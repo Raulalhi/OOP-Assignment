@@ -30,7 +30,7 @@ Crop an image and adjust it so that it fits in the center.
 <h3>4. Sphere</h3>
 Using sphere() and transforming the sketch to 3D we create a spehre that rotates around its X and Y axis.
 
-![alt text](https://github.com/Raulalhi/OOP-Assignment/blob/master/Screenshots/0b93904b7338f0932ba3f7c4f490ddef.png)
+![alt text](https://github.com/Raulalhi/OOP-Assignment/blob/master/Screenshots/2a1188e138b824b84856194bd20bb818.png)
 
 <h3>5. Levels</h3>
 
