@@ -3,7 +3,10 @@
 OOP Assignment.
 Sci-fi movie UI.
 
-Link to Youtube video: https://www.youtube.com/watch?v=6lyLSqo1CzQ <br>
+Youtube video: <br>
+
+[![Video](https://www.youtube.com/watch?v=6lyLSqo1CzQ)](https://www.youtube.com/watch?v=6lyLSqo1CzQ)
+
 My User Interface is based on a Martian Greenhouse. It is a menu with 8 choices, each one draws different animations.
 
 In order to acces the menu we need to enter a password. The password is the common name of the specie Ilex aquifolium, which is "holly".
