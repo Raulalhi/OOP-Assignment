@@ -9,12 +9,13 @@ My User Interface is based on a Martian Greenhouse. It is a menu with 8 choices,
 In order to acces the menu we need to enter a password. The password is the common name of the specie Ilex aquifolium, which is "holly".
 ![alt text](https://github.com/Raulalhi/OOP-Assignment/blob/master/Screenshots/b5e46102bafbed0baba8704764e36941.png)
 
+The frame of the menu is made up by an array of objects called MenuOption with a circle in the middle. If we hover over an option, the fill color will change to blue, and if we click it, it performs a function.
 
 <h3>1.Tree </h3>
 
 This function creates a fractal tree using recursion and polar coordinates. The function takes the x and y values from where we want to start our tree, the angle in which it is facing, the length of the branch, the color of our tree, the stroke weight and the number of branches. Every time the function loops, branches are created using recursion.
 
-![alt text](https://github.com/Raulalhi/OOP-Assignment/blob/master/Screenshots/0b93904b7338f0932ba3f7c4f490ddef.png)
+![alt text](https://github.com/Raulalhi/OOP-Assignment/blob/master/Screenshots/738d17c7c88aae4fb7fc1a09b9240dc1.gif)
 
 <h3>2. Graph</h3>
 
